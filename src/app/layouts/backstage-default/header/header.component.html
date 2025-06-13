@@ -9,21 +9,21 @@
         </nz-badge>
     </span>
     <span class="bst-header-icon" nz-dropdown [nzDropdownMenu]="userSettingMenu">
-        <img src="assets/img/default_face.png"
+        <img src="assets/img/logo.png"
             style="width: 24px;height: 24px;line-height: 24px;margin: 20px 8px 20px 0;vertical-align:top;">
         <span style="font-size: 14px;">jun-tech</span>
     </span>
     <nz-dropdown-menu #userSettingMenu="nzDropdownMenu">
         <ul nz-menu class="bst-header_usr_menu">
             <li nz-menu-item>
-                <i nz-icon nzType="user" nzTheme="outline" class="bst-header_usr_menu_icon"></i><span>个人中心</span>
+                <i nz-icon nzType="user" nzTheme="outline" class="bst-header_usr_menu_icon"></i><span>Profile</span>
             </li>
             <li nz-menu-item>
-                <i nz-icon nzType="setting" nzTheme="outline" class="bst-header_usr_menu_icon"></i><span>个人设置</span>
+                <i nz-icon nzType="setting" nzTheme="outline" class="bst-header_usr_menu_icon"></i><span>Setting</span>
             </li>
             <li nz-menu-divider></li>
             <li nz-menu-item (click)="logout()">
-                <i nz-icon nzType="logout" nzTheme="outline" class="bst-header_usr_menu_icon"></i><span>退出登录</span>
+                <i nz-icon nzType="logout" nzTheme="outline" class="bst-header_usr_menu_icon"></i><span>Sign Out</span>
             </li>
         </ul>
     </nz-dropdown-menu>

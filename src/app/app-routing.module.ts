@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RouterGuardService } from './services/core/router-guard.service';
-// 选择布局组件
+// Choose layout component
 // import { BackstageTopbannerComponent as BackstageLayoutComponent} from './layouts/backstage-topbanner/backstage-topbanner.component';
 import { BackstageDefaultComponent as BackstageLayoutComponent } from './layouts/backstage-default/backstage-default.component';
 
 const routes: Routes = [
-  // 前台模块
+  // Frontend module
   {
     path: 'frontstage',
     loadChildren: () => import('./pages/frontstage/frontstage.module').then(m => m.FrontStageModule),
   },
-  // 帐户登录、注册、找回密码等界面
+  // Account login, registration, password recovery, etc. pages
   {
     path: 'account',
     loadChildren: () => import('./pages/account/account.module').then(m => m.AccountModule),
   },
-  // 后台模块
+  // Backend module
   {
     path: '',
     component: BackstageLayoutComponent,

@@ -25,25 +25,41 @@ export class PlatformCoreService {
    */
   getMenuResource(tabItemList: Array<MenuItem>) {
     let tabItem = new MenuItem();
-    tabItem.label = '工作桌面';
+    tabItem.label = 'Home';
     tabItem.module = '/system/home';
     tabItem.icon = 'home';
     tabItemList.push(tabItem);
 
     tabItem = new MenuItem();
-    tabItem.label = '列表页';
+    tabItem.label = 'Catalogs';
     tabItem.icon = 'table';
     tabItem.isGroup = true;
     // 常用统计
     let subTabItem = new MenuItem();
-    subTabItem.label = '查询列表';
+    subTabItem.label = 'Company';
     subTabItem.module = '/examples/list/list-search';
     tabItem.children.push(subTabItem);
 
     subTabItem = new MenuItem();
-    subTabItem.label = '标准列表';
+    subTabItem.label = 'Cars';
     subTabItem.module = '/examples/list/basic-list';
     tabItem.children.push(subTabItem);
+
+    subTabItem = new MenuItem();
+    subTabItem.label = 'Expenses';
+    subTabItem.module = '/examples/list/basic-list';
+    tabItem.children.push(subTabItem);
+
+    subTabItem = new MenuItem();
+    subTabItem.label = 'Income';
+    subTabItem.module = '/examples/list/basic-list';
+    tabItem.children.push(subTabItem);
+
+    subTabItem = new MenuItem();
+    subTabItem.label = 'Home Office';
+    subTabItem.module = '/examples/list/basic-list';
+    tabItem.children.push(subTabItem);
+
     tabItemList.push(tabItem);
 
     // 常用统计
