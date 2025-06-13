@@ -22,7 +22,7 @@
     "@antv/g2": "^3.4.10",
     "mockjs": "1.1.0",
     "ng-zorro-antd": "^20.0.0",
-    "rxjs": "^8.0.0",
+    "rxjs": "^7.4.0",
     "tslib": "^2.6.0",
     "zone.js": "~0.16.0"
   },
@@ -38,6 +38,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.0"
+    "typescript": "^5.8.0"
   }
 }
