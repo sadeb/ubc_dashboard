@@ -1,10 +1,11 @@
-import { Component, OnInit, Input, OnChanges, TemplateRef, ChangeDetectorRef } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnChanges, TemplateRef } from '@angular/core';
 
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'g2-card',
   templateUrl: './g2-card.component.html',
-  styleUrls: ['./g2-card.component.less']
+  styleUrls: ['./g2-card.component.less'],
+  imports: [CommonModule]
 })
 export class G2CardComponent implements OnChanges {
   /** 是否显示边框 */

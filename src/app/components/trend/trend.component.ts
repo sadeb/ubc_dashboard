@@ -1,10 +1,12 @@
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'trend',
   templateUrl: './trend.component.html',
   styleUrls: ['./trend.component.less'],
+  imports: [CommonModule],
   // host: {
   //   '[class.trend]': 'true',
   //   '[class.trend__grey]': '!colorful',

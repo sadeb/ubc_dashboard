@@ -4,10 +4,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [TrendComponent],
-  exports: [
-    TrendComponent
-  ],
-  imports: [CommonModule, NzIconModule]
+  imports: [CommonModule, NzIconModule, TrendComponent]
 })
 export class TrendModule { }

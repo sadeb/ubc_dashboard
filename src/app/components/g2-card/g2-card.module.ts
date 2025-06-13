@@ -5,8 +5,6 @@ import { NzSpinModule } from 'ng-zorro-antd/spin'
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [G2CardComponent],
-  exports: [G2CardComponent],
-  imports: [CommonModule, NzCardModule, NzSpinModule]
+  imports: [CommonModule, NzCardModule, NzSpinModule, G2CardComponent]
 })
 export class G2CardModule { }

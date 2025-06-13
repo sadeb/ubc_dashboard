@@ -9,8 +9,15 @@ import { HeaderComponent } from './header/header.component'
 import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
-  declarations: [BackstageDefaultComponent, SidebarComponent, ReuseTabComponent, HeaderComponent, FooterComponent],
-  exports: [BackstageDefaultComponent, SidebarComponent, ReuseTabComponent, HeaderComponent, FooterComponent],
-  imports: [CommonModule, NgZorroAntdModule, RouterModule]
+  imports: [
+    CommonModule,
+    NgZorroAntdModule,
+    RouterModule,
+    BackstageDefaultComponent,
+    SidebarComponent,
+    ReuseTabComponent,
+    HeaderComponent,
+    FooterComponent
+  ]
 })
 export class BackstageDefaultModule { }

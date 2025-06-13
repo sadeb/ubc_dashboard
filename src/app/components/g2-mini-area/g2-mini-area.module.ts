@@ -4,10 +4,6 @@ import { CommonModule } from '@angular/common';
 // import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 @NgModule({
-  declarations: [G2MiniAreaComponent],
-  exports: [
-    G2MiniAreaComponent
-  ],
-  imports: [CommonModule]
+  imports: [CommonModule, G2MiniAreaComponent]
 })
 export class G2MiniAreaModule { }

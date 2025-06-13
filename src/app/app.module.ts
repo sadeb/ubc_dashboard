@@ -22,9 +22,7 @@ import { BackstageDefaultModule as BackstageLayoutModule } from './layouts/backs
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,6 +33,7 @@ registerLocaleData(en);
     BackstageLayoutModule,
     ComponentCoreModule.forRoot(),
     SharedCoreModule.forRoot(),
+    AppComponent,
 
   ],
   providers: [

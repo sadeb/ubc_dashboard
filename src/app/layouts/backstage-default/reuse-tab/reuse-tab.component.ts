@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map, mergeMap, take } from 'rxjs/operators';
@@ -9,7 +10,8 @@ import { AppReuseStrategy } from 'src/app/services/core/app-reuse-strategy';
 @Component({
   selector: 'app-reuse-tab',
   templateUrl: './reuse-tab.component.html',
-  styleUrls: ['./reuse-tab.component.less']
+  styleUrls: ['./reuse-tab.component.less'],
+  imports: [CommonModule]
 })
 export class ReuseTabComponent {
 

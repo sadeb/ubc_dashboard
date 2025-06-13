@@ -4,10 +4,6 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [G2MiniProgressComponent],
-  exports: [
-    G2MiniProgressComponent
-  ],
-  imports: [CommonModule, NzToolTipModule]
+  imports: [CommonModule, NzToolTipModule, G2MiniProgressComponent]
 })
 export class G2MiniProgressModule { }

@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { PlatformCoreService } from 'src/app/services/platform/platform-core.service';
 import { Router } from '@angular/router';
 import { MenuItem } from 'src/app/models/core/menuItem';
@@ -6,7 +7,8 @@ import { MenuItem } from 'src/app/models/core/menuItem';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
+  imports: [CommonModule]
 })
 export class SidebarComponent implements OnInit {
 

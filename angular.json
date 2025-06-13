@@ -79,10 +79,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-ant-design-pro-platform:build:production"
+              // "browserTarget": "ng-ant-design-pro-platform:build:production",
+              "buildTarget": "ng-ant-design-pro-platform:build:production"
             },
             "development": {
-              "browserTarget": "ng-ant-design-pro-platform:build:development"
+              // "browserTarget": "ng-ant-design-pro-platform:build:development",
+              "buildTarget": "ng-ant-design-pro-platform:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -4,10 +4,6 @@ import { G2MiniBarComponent } from './g2-mini-bar.component';
 // import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 @NgModule({
-  declarations: [G2MiniBarComponent],
-  exports: [
-    G2MiniBarComponent
-  ],
-  imports: [CommonModule]
+  imports: [CommonModule, G2MiniBarComponent]
 })
 export class G2MiniBarModule { }
