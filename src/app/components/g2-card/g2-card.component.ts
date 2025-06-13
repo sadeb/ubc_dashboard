@@ -5,6 +5,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnChanges
   selector: 'g2-card',
   templateUrl: './g2-card.component.html',
   styleUrls: ['./g2-card.component.less'],
+  standalone: true,
   imports: [CommonModule]
 })
 export class G2CardComponent implements OnChanges {

@@ -8,8 +8,11 @@ import { Exception403Component } from './403/403.component';
 @NgModule({
   imports: [
     CommonModule,
-    ExceptionRoutingModule
+    ExceptionRoutingModule,
+    Exception403Component,
+    Exception404Component,
+    Exception500Component
   ],
-  declarations: [Exception403Component, Exception404Component, Exception500Component]
+  declarations: []
 })
 export class ExceptionModule { }

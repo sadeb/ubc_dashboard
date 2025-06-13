@@ -12,9 +12,10 @@ import { AccountRoutingModule } from './account-routing.module';
     FormsModule,
     HttpClientModule,
     NgZorroAntdModule,
-    AccountRoutingModule
+    AccountRoutingModule,
+    LoginComponent
   ],
-  declarations: [LoginComponent],
+  declarations: [],
   providers: []
 })
 export class AccountModule { }

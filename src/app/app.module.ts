@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgZorroAntdModule } from './ng-zorro-antd.module';
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData, CommonModule } from '@angular/common';
@@ -22,7 +22,7 @@ import { BackstageDefaultModule as BackstageLayoutModule } from './layouts/backs
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -33,7 +33,7 @@ registerLocaleData(en);
     BackstageLayoutModule,
     ComponentCoreModule.forRoot(),
     SharedCoreModule.forRoot(),
-    AppComponent,
+
 
   ],
   providers: [

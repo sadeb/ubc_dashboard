@@ -11,13 +11,14 @@ import { FooterComponent } from './footer/footer.component'
 @NgModule({
   imports: [
     CommonModule,
-    NgZorroAntdModule,
     RouterModule,
+    NgZorroAntdModule,
     BackstageDefaultComponent,
-    SidebarComponent,
-    ReuseTabComponent,
     HeaderComponent,
-    FooterComponent
-  ]
+    SidebarComponent,
+    FooterComponent,
+    ReuseTabComponent
+  ],
+  exports: [BackstageDefaultComponent]
 })
 export class BackstageDefaultModule { }

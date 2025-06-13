@@ -14,8 +14,13 @@ import { LayoutContentComponent } from './layout/layout-content/layout-content.c
     CommonModule,
     NgZorroAntdModule,
     // ComponentCoreModule,
-    ExamplesRoutingModule
+    ExamplesRoutingModule,
+    ListSearchComponent,
+    BasicListComponent,
+    ChartPipeComponent,
+    NzDemoLayoutSideComponent,
+    LayoutContentComponent
   ],
-  declarations: [ListSearchComponent, BasicListComponent, ChartPipeComponent, NzDemoLayoutSideComponent, LayoutContentComponent]
+  declarations: []
 })
 export class ExamplesModule { }

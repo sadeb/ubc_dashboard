@@ -12,8 +12,10 @@ import { UsersComponent } from './users/users.component';
     CommonModule,
     NgZorroAntdModule,
     SystemRoutingModule,
-    ComponentCoreModule
+    ComponentCoreModule,
+    HomeComponent,
+    UsersComponent
   ],
-  declarations: [HomeComponent, UsersComponent]
+  declarations: []
 })
 export class SystemModule { }
